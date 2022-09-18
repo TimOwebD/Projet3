@@ -1,0 +1,274 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+
+
+p
+{
+    font-family: "Roboto", "sans-serif";
+}
+
+h2
+{
+    font-family: "Roboto", "sans-serif";
+    font-size: 25px;
+}
+
+h3
+{
+    font-family: "Shrikhand", "sans-serif";
+    font-weight: normal;
+    margin-left: 40px;
+}
+
+.Bold
+{
+  font-weight: bold;
+}
+
+.MargeG
+{
+    margin-left: 15px;
+}
+
+.MargeD
+{
+    margin-right: 15px;
+}
+
+.MargeD2
+{
+    margin-right: 10px;
+}
+
+.MargeH
+{
+    margin-top: 30px;
+}
+
+.MargeB
+{
+    margin-bottom: 30px;
+}
+
+
+
+.Blanc
+{
+    color: white;
+}
+
+a
+{
+	text-decoration: none;
+	cursor: pointer;
+    color: white;
+}
+
+.CentrerColumn
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;  
+}
+
+.CentrerRow
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px; 
+}
+
+.OhmyfoodMarge
+{
+    margin-top: 30px;
+}
+
+.SectionRecherche
+{
+    margin-top: 20px;
+    background-color: rgb(235, 235, 235);
+    border-top: 2px solid lightgray;
+}
+
+
+
+.SectionTitre
+{
+    background-color: #F2F2F2;
+    padding-bottom: 50px;
+}
+
+.Titre1
+{
+    width: 50%;
+    height: auto;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.PlacementText
+{
+    width: 70%;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.BoutonExplorer
+{
+    border: 0px solid;
+    border-radius: 25px;
+    padding: 15px;
+    color: white;
+    background: linear-gradient(to bottom right, #FF79DA , #9356DC )
+}
+
+.SectionFonctionnement
+{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    padding-bottom: 50px;
+  
+}
+
+
+
+.BoutonFonctionnement
+{
+    position: relative;
+    border: 0px solid;
+    border-radius: 25px;
+    box-shadow: 2px 2px 6px 2px #F2F2F2;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    align-items: center; 
+}
+
+.Number
+{
+    position: absolute;
+    left: -10px;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: #9356DC ;
+}
+
+.SectionRestaurant
+{
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 1350px;
+    padding-top: 30px;
+}
+
+.Carte
+{
+    background-color: white;
+	width: 450px;
+	height: 280px;
+	border: 0px solid;
+    border-radius: 20px  20px 20px 20px;
+	box-shadow: 6px 6px 6px rgb(235, 235, 235);
+}
+
+.BlocImage
+{
+ 	border-radius: 20px  20px 0px 0px;
+	width: 100%;
+	height: 200px;
+}
+
+.Image1
+{
+    background-image: url("images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-size: cover;
+	background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px  20px 0px 0px;
+}
+
+.Image2
+{
+    background-image: url("images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+    background-size: cover;
+	background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px  20px 0px 0px;
+}
+
+.Image3
+{
+    background-image: url("images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-size: cover;
+	background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px  20px 0px 0px;
+}
+
+.Image4
+{
+    background-image: url("images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+    background-size: cover;
+	background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px  20px 0px 0px;
+}
+
+.Nouveau
+{
+    position: absolute;
+    width: 90px;
+    height: 35px;
+    background-color: #99E2D0;
+    color: green;
+    border-radius: 5px 5px 5px 5px;
+    bottom: 210px;
+    right: 5%;
+}
+
+.BlocTexte
+{
+    position: relative;
+}
+
+.HeartIcone
+{
+	position: absolute;
+	bottom: 50%;
+	margin-left: 90%;
+}
+
+.SectionFooter
+{
+    width: 100%;
+    height: auto;
+    background-color: rgb(54, 54, 54);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Liste
+{
+    display: flex;
+    list-style: none;
+    align-items: center;  
+}
