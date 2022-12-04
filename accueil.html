@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 			<link rel="stylesheet" type="text/css" href="accueil.styles.css">
             <link rel="stylesheet" media="screen and (max-width: 768px)" href="_media.css"/>
-            <title>Ohmyfood</title>
+            <title>Ohmyfood Accueil</title>
 			<script src="https://kit.fontawesome.com/3313ba1e29.js" crossorigin="anonymous"></script>	<!--fontawesome icones-->
     </head>
     
@@ -20,7 +20,7 @@
         <div class="SectionTitre CentrerColumn" >
             <h2 class="Titre1">Réservez le menu qui vous convient</h2>
             <p class="PlacementText">Découvrez des restaurants d'exception, selectionnés par nos soins</p>
-            <div class="BoutonExplorer">Explorer nos restaurant</div> <!--Bouton violet-->
+            <a href="#1"><div class="BoutonExplorer">Explorer nos restaurant</div></a> <!--Bouton violet-->
         </div>
 
     </header>
@@ -29,9 +29,9 @@
 
         <div class="SectionFonctionnement">   <!--////Section FONCTIONNEMENT////-->
                 <h2 class="MargeG">Fonctionnement</h2>
-            <div class="CentrerColumn"> 
-                <div class="BoutonFonctionnement CentrerRow MargeH"><div class="Number CentrerRow">1</div><i class="fa-solid fa-mobile-screen-button fa-lg MargeD"></i><p class="Bold">Choisissez un restaurant</p></div> <!--Bouton restaurant-->
-                <div class="BoutonFonctionnement CentrerRow MargeH"><div class="Number CentrerRow">2</div><i class="fa-solid fa-bars fa-lg MargeD" ></i><p class="Bold">Composez votre menu</p></div> <!--Bouton menu-->
+            <div class="CentrerColumn FonctionnementRow">                 
+                <div class="BoutonFonctionnement CentrerRow MargeH "><div class="Number CentrerRow">1</div><i class="fa-solid fa-mobile-screen-button fa-lg MargeD"></i><p class="Bold">Choisissez un restaurant</p></div> <!--Bouton restaurant-->
+                <div class="BoutonFonctionnement CentrerRow MargeH "><div class="Number CentrerRow">2</div><i class="fa-solid fa-bars fa-lg MargeD" ></i><p class="Bold">Composez votre menu</p></div> <!--Bouton menu-->
                 <div class="BoutonFonctionnement CentrerRow MargeH"><div class="Number CentrerRow">3</div><i class="fa-sharp fa-solid fa-store fa-lg MargeD"></i><p class="Bold">Degustez au restaurant</p></div> <!--Bouton deguster-->
             </div> 
         </div>  <!--////-->
@@ -39,9 +39,10 @@
         <div class="SectionRestaurant">   <!--////Section RESTAURANT////-->
                 <h2 class="MargeG">Restaurant</h2>
 
-            <div class="CentrerColumn">   
+            <div class="CentrerColumn">
+              <div class="ResponsivRow">   <!--bloc pour aligner 2 cartes dans la partie responsive-->  
 
-                <div class="Carte MargeB">    <!--Carte la palette du gout-->    
+                <div class="Carte MargeB MargeDResponsiv">   <!--Carte la palette du gout-->    
                     <div class="BlocImage"><div class="Image1"></div></div>
                     <div class="BlocTexte">
                         <p class="Bold MargeG">La palette du goût</p>
@@ -60,8 +61,10 @@
                         <div class="Nouveau CentrerColumn Bold">Nouveau</div>              
                     </div>
                 </div> <!--////-->
+              </div>  <!--bloc pour aligner 2 cartes dans la partie responsive-->
 
-                <div class="Carte MargeB">    <!--Carte A la Française-->     
+              <div class="ResponsivRow">   <!--bloc pour aligner 2 cartes dans la partie responsive--> 
+                <div class="Carte MargeB MargeDResponsiv">    <!--Carte A la Française-->     
                     <div class="BlocImage"><div class="Image3"></div></div>
                     <div class="BlocTexte">
                         <p class="Bold MargeG">A la Française</p>
@@ -80,6 +83,7 @@
                                     
                     </div>
                 </div> <!--////-->
+              </div>  <!--bloc pour aligner 2 cartes dans la partie responsive-->  
 
             </div>
 
@@ -91,10 +95,10 @@
         
             <h3 class="Blanc">ohmyfood</h3> 
             <ul>
-                <li class="Blanc Liste"><i class="fa-sharp fa-solid fa-utensils fa-xs MargeD"></i><a href="#">Proposer un restaurant</a></li>
-                <li class="Blanc Liste"><i class="fa-solid fa-handshake-angle fa-xs MargeD2"></i><a href="#">Devenir partenaire</a></li>
-                <li class="Blanc Liste"><a href="#">Mentions légales</a></li>
-                <li class="Blanc Liste"><a href="#">Contact</a></li>
+                <li class="Blanc Liste"><i class="fa-sharp fa-solid fa-utensils fa-xs MargeD"></i><a class="Blanc" href="#">Proposer un restaurant</a></li>
+                <li class="Blanc Liste"><i class="fa-solid fa-handshake-angle fa-xs MargeD2"></i><a class="Blanc" href="#">Devenir partenaire</a></li>
+                <li class=" Liste"><a class="Blanc" href="#">Mentions légales</a></li>
+                <li class=" Liste"><a class="Blanc" href="#">Contact</a></li>
             </ul>
        
     </footer>

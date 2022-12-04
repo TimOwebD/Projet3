@@ -1,0 +1,345 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+
+                /* ////   PROPRIETES GENERALE   ////  */
+p
+{
+    font-family: "Roboto", "sans-serif";
+}
+
+
+h1
+{
+    font-family: "Shrikhand", "sans-serif";
+    font-weight: normal;
+    margin-left: 20px;
+    font-size: 35px;
+}
+
+h2
+{
+    font-family: "Roboto", "sans-serif";
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+h3
+{
+    font-family: "Shrikhand", "sans-serif";
+    font-weight: normal;
+    margin-left: 35px;
+    font-size: 20px;
+}
+
+.Size20px
+{
+    font-size: 20px;
+}
+
+.Bold
+{
+  font-weight: bold;
+}
+
+.MargeG
+{
+    margin-left: 30px;
+}
+
+.MargeD
+{
+    margin-right: 15px;
+}
+
+.MargeD2
+{
+    margin-right: 12px;
+}
+
+
+.MargeH
+{
+    margin-top: 30px;
+}
+
+.MargeB
+{
+    margin-bottom: 30px;
+}
+
+
+.Blanc
+{
+    color: white;
+}
+
+a
+{
+	text-decoration: none;
+	cursor: pointer;
+    color: white;
+}
+
+.CentrerColumn
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.CentrerRow
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Centrer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*////////////////////////////////////////*/
+
+
+
+						/* DEBUT DU HEADER */
+
+Header
+{
+    width: 100%;
+    height: 80px;
+}
+
+.ArrowPosition
+{
+   position: absolute;
+   left: 30px;
+}
+
+.LogoResponsivSize
+{
+    width: 200px;
+} 
+
+/*////////////////////////////////////////*/
+
+
+
+						/* DEBUT DU BODY */
+
+.BlocImage
+{
+	width: 100%;
+	height: 350px;
+}
+
+.Image
+{
+    background-image: url("images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-size: cover;
+	background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.SectionMenu
+{
+    border: 1px solid white;
+    border-radius: 70px 70px;
+    width: 100%;
+    height: auto;
+    margin-top: -70px;
+    background-color: #F2F2F2;
+}
+
+.TitrePosition
+{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    height: auto; 
+}
+
+.GreenLine
+{
+    border-bottom: 4px solid #99E2D0;
+    width: 50px;
+}
+
+.BoutonBase
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 0px solid;
+    border-radius: 15px;
+    box-shadow: 2px 2px 6px 2px #e0dfdf;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 90%;
+    height: 60px;
+    background-color: white;
+   
+}
+
+.TextPosition
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -25px;
+}
+
+.BoutonCommander
+{
+    border: 0px solid;
+    border-radius: 25px;   
+    box-shadow: 2px 6px 6px 2px #e0dfdf; 
+    color: white;
+    background: linear-gradient(to bottom right, #FF79DA , #9356DC );
+    width: 200px;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+/*////////////////////////////////////////*/
+
+
+
+						/* DEBUT DU FOOTER */
+
+.SectionFooter
+{
+    width: 100%;
+    height: auto;
+    background-color: rgb(54, 54, 54);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Liste
+{
+    display: flex;
+    list-style: none;
+    align-items: center;  
+}
+
+/*--------------------------------------------RESPONSIVE TABLETTE (768px à 992px)------------------------------------------------*/
+
+@media screen and  (min-width: 769px) and (max-width: 992px)
+{
+
+h1
+{
+    font-size: 40px;
+}    
+
+h2
+{
+    margin-left: 10%;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.LogoResponsivSize      /*Taille adaptative du logo "Ohmygod"*/
+{
+    width: 250px;
+}  
+
+.SectionMenu            /*Reduit la hauteur de la section body pour laisser plus de place a l'image*/
+{
+    margin-top: -50px;
+}
+
+.TitrePosition
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HeartIcone
+{
+    margin-left: 30px;
+}
+
+.BoutonBase             /*Bouton de base pour les menus */
+{
+    width: 65%;
+    padding: 20px;
+}    
+
+.BoutonCommander
+{
+    width: 230px;
+   font-size: 18px; 
+}
+
+}
+
+/*--------------------------------------------RESPONSIVE DESKTOP (Superieur à 992px)------------------------------------------------*/
+
+@media screen and  (min-width: 993px)
+{
+
+h1
+{
+    font-size: 45px;
+}  
+
+h2
+{
+    margin-left: 13%;
+    margin-bottom: 30px;
+    font-size: 25px;
+
+}    
+
+.LogoResponsivSize              /*Taille adaptative du logo "Ohmygod"*/
+{
+    width: 300px;
+} 
+
+.SectionMenu                    /*Reduit la hauteur de la section body pour laisser plus de place a l'image*/
+{
+    margin-top: -50px;
+}
+
+
+.TitrePosition
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HeartIcone
+{
+    margin-left: 30px;
+}
+
+.BoutonBase                     /*Bouton de base pour les menus */
+{
+    width: 65%;
+    padding: 20px;
+}    
+
+.BoutonCommander
+{
+    width: 230px;
+   font-size: 18px; 
+}
+
+
+}
