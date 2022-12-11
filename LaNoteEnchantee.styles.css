@@ -108,6 +108,66 @@ a
     justify-content: center;
 }
 
+.HeartIcone
+{
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+/*////////////////////////////////////////*/
+
+.loader
+{
+position: fixed;
+background-color: white;
+height: 100vh;
+inset: 0;
+z-index: 2;
+opacity: 0.9;
+animation: LoaderEnd 3s forwards;
+
+}
+
+@keyframes LoaderEnd
+{
+    0% {transform: scale(1);}
+    100% {transform: scale(0);}
+}
+
+.Circle
+{
+    z-index: 1;
+    margin: auto;  
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+
+    width: 100px;
+    height: 100px;
+
+    border: 10px solid black;
+    border-top: 10px solid #9356DC ; 
+    border-right: 10px solid #FF79DA ;
+    border-bottom: 10px solid #99E2D0 ;
+    border-left: 10px solid white;
+    border-radius: 50%;
+
+   -webkit-animation: spin 1.5s linear infinite; /*Chrome, explorer etc..*/
+   -o-animation: spin 1.5s linear infinite;  /*Mozilla*/
+   animation: spin 1.5s linear infinite;  
+}
+
+@-webkit-keyframes spin /*Permet d'optimiser le fonctionnement de l'animation sur les vieux navigateurs'*/
+{
+    0% {transform: rotate(0deg);} 
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes spin /*Permet de donner une specification au terme "spin"*/
+{
+    0% {transform: rotate(0deg);} 
+    100% {transform: rotate(360deg);}
+}
+
 /*////////////////////////////////////////*/
 
 
@@ -184,13 +244,25 @@ Header
     justify-content: center;
     border: 0px solid;
     border-radius: 15px;
-    box-shadow: 2px 2px 6px 2px #e0dfdf;
+    box-shadow: 6px 6px 6px rgb(235, 235, 235);
     padding: 10px;
     margin-bottom: 15px;
     width: 90%;
     height: 60px;
     background-color: white;
    
+}
+
+.BoutonBase:hover
+{
+    box-shadow: 8px 8px 8px rgb(214, 214, 214); 
+    color: rgb(76, 76, 76);
+}
+
+.BoutonBase:active
+{
+    box-shadow: 4px 4px 4px rgb(214, 214, 214);
+    color: black;
 }
 
 .TextPosition
@@ -214,6 +286,18 @@ Header
     margin-bottom: 60px;
 }
 
+.BoutonCommander:hover
+{
+    box-shadow: 0px 1px 1px 1px rgb(76, 76, 76) ;
+}
+
+.BoutonCommander:active
+{
+    box-shadow: 0px 1px 1px 1px white ;
+}
+
+
+
 /*////////////////////////////////////////*/
 
 
@@ -235,6 +319,19 @@ Header
     list-style: none;
     align-items: center;  
 }
+
+.ohmyfood
+{
+    color: white;
+}
+
+.Blanc:hover
+{
+  font-size: 17px;
+}
+
+
+
 
 /*--------------------------------------------RESPONSIVE TABLETTE (768px à 992px)------------------------------------------------*/
 
@@ -270,10 +367,7 @@ h2
     align-items: center;
 }
 
-.HeartIcone
-{
-    margin-left: 30px;
-}
+
 
 .BoutonBase             /*Bouton de base pour les menus */
 {
