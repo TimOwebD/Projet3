@@ -107,6 +107,12 @@ a
     justify-content: center;
 }
 
+.HeartIcone
+{
+    margin-left: 30px;
+    font-size: 30px;
+}
+
 /*////////////////////////////////////////*/
 
 .loader
@@ -246,15 +252,27 @@ Header
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-
     border: 0px solid;
     border-radius: 15px;
+    box-shadow: 6px 6px 6px rgb(235, 235, 235);
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 90%;
+    height: 60px;
+    background-color: white;
+   cursor: pointer;
+}
 
-    box-shadow: 2px 2px 6px 2px #e0dfdf;
-    background-color: white;   
+.BoutonBase:hover
+{
+    box-shadow: 8px 8px 8px rgb(214, 214, 214); 
+    color: rgb(76, 76, 76);
+}
+
+.BoutonBase:active
+{
+    box-shadow: 4px 4px 4px rgb(214, 214, 214);
+    color: black;
 }
 
 .TextPosition
@@ -285,6 +303,17 @@ Header
     height: auto;
     margin-top: 40px;
     margin-bottom: 60px;
+    cursor: pointer;
+}
+
+.BoutonCommander:hover
+{
+    box-shadow: 0px 1px 1px 1px rgb(76, 76, 76) ;
+}
+
+.BoutonCommander:active
+{
+    box-shadow: 0px 1px 1px 1px white ;
 }
 
 /*////////////////////////////////////////*/
@@ -307,6 +336,16 @@ Header
     display: flex;
     list-style: none;
     align-items: center;  
+}
+
+.ohmyfood
+{
+    color: white;
+}
+
+.Blanc:hover
+{
+  font-size: 17px;
 }
 
 /*--------------------------------------------RESPONSIVE TABLETTE (768px à 992px)------------------------------------------------*/
@@ -341,11 +380,6 @@ h2
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.HeartIcone
-{
-    margin-left: 30px;
 }
 
 .BoutonBase             /*Bouton de base pour les menus */
