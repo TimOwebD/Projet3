@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
 
                 /* ////   PROPRIETES GENERALE   ////  */
-
 p
 {
     font-family: "Roboto", "sans-serif";
@@ -80,7 +79,6 @@ a
 {
 	text-decoration: none;
 	cursor: pointer;
-    color: white;
 }
 
 .CentrerColumn
@@ -114,59 +112,6 @@ a
     font-size: 30px;
 }
 
-/*////////////////////////////////////////*/
-
-.loader
-{
-position: fixed;
-background-color: white;
-height: 100vh;
-inset: 0;
-z-index: 2;
-opacity: 0.9;
-animation: LoaderEnd 3s forwards;
-
-}
-
-@keyframes LoaderEnd
-{
-    0% {transform: scale(1);}
-    100% {transform: scale(0);}
-}
-
-.Circle
-{
-    z-index: 1;
-    margin: auto;  
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-
-    width: 100px;
-    height: 100px;
-
-    border: 10px solid black;
-    border-top: 10px solid #9356DC ; 
-    border-right: 10px solid #FF79DA ;
-    border-bottom: 10px solid #99E2D0 ;
-    border-left: 10px solid white;
-    border-radius: 50%;
-
-   -webkit-animation: spin 1.5s linear infinite; /*Chrome, explorer etc..*/
-   -o-animation: spin 1.5s linear infinite;  /*Mozilla*/
-   animation: spin 1.5s linear infinite;  
-}
-
-@-webkit-keyframes spin /*Permet d'optimiser le fonctionnement de l'animation sur les vieux navigateurs'*/
-{
-    0% {transform: rotate(0deg);} 
-    100% {transform: rotate(360deg);}
-}
-
-@keyframes spin /*Permet de donner une specification au terme "spin"*/
-{
-    0% {transform: rotate(0deg);} 
-    100% {transform: rotate(360deg);}
-}
 
 /*////////////////////////////////////////*/
 
@@ -189,7 +134,7 @@ Header
 .LogoResponsivSize
 {
     width: 200px;
-}  
+} 
 
 /*////////////////////////////////////////*/
 
@@ -228,7 +173,7 @@ Header
     display: flex;
     justify-content: space-between;
     width: 95%;
-    height: auto;
+    height: auto; 
 }
 
 .GreenLine
@@ -237,40 +182,128 @@ Header
     width: 50px;
 }
 
-.BoutonBase
+.BoutonMenu
 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+ 
+    line-height: 2px;
+    margin-bottom: 25px;
+   
+    width: 80%;
+    height: 60px;
+
     border: 0px solid;
     border-radius: 15px;
-    box-shadow: 6px 6px 6px rgb(235, 235, 235);
-    padding: 10px;
-    margin-bottom: 15px;
-    width: 90%;
-    height: 60px;
-    background-color: white;
-    cursor: pointer;
+    box-shadow: 2px 2px 6px 2px #dcdbdb;
+    background-color: #ffffff; 
+ 
+    cursor: pointer; 
+    overflow: hidden;
+
+    -webkit-animation: apparrition 1.5s; /*Chrome, explorer etc..*/
+    -o-animation: apparrition 1.5s ;  /*Mozilla*/
+    animation: apparrition 1.5s ;  
+ 
 }
 
-.BoutonBase:hover
+.BoutonMenu:hover
 {
     box-shadow: 8px 8px 8px rgb(214, 214, 214); 
     color: rgb(76, 76, 76);
 }
 
-.BoutonBase:active
+.BoutonMenu:active
 {
     box-shadow: 4px 4px 4px rgb(214, 214, 214);
     color: black;
 }
 
-.TextPosition
+.Details
+{
+ padding-left: 15px;
+ width: 100%;
+ height: 100%;
+
+ white-space: nowrap;  
+ overflow: hidden;
+ text-overflow: ellipsis
+ 
+
+}
+
+.Tarif
+{
+    display: flex; 
+    align-items: flex-end;
+    font-weight: bold; 
+    padding-right: 15px;
+}
+
+.Validation
 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: -25px;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+    border: 0px solid #99E2D0;
+    background-color: #99E2D0;
+    border-radius: 0 15px 15px 0; 
+    margin-right: -100px;
+    transition: 300ms ease-in-out;
+}
+
+
+.BoutonMenu:hover .Validation
+{
+    
+    margin-right: 0px;
+}
+
+.Green
+{
+    color: #99E2D0;
+}
+
+.circle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+
+@-webkit-keyframes apparrition /*Permet d'optimiser le fonctionnement de l'animation sur les vieux navigateurs'*/
+{
+ 0% {transform: translateY(500px);} 
+ 100% {transform: translateY(0px);}
+}
+
+@keyframes apparrition1 /*Permet de donner une specification au terme "spin"*/
+{
+ 0% {transform: translateY(500px);} 
+ 100% {transform: translateY(0px);}
+}
+
+
+
+.validation
+{
+    width: 100px;
+    height: 100%;
+    border: 0px solid #99E2D0;
+    background-color: #99E2D0;
+    border-radius: 0 15px 15px 0;
 }
 
 .BoutonCommander
@@ -296,6 +329,11 @@ Header
 {
     box-shadow: 0px 1px 1px 1px white ;
 }
+
+
+
+
+
 
 
 
@@ -331,9 +369,6 @@ Header
   font-size: 17px;
 }
 
-
-
-
 /*--------------------------------------------RESPONSIVE TABLETTE (768px à 992px)------------------------------------------------*/
 
 @media screen and  (min-width: 769px) and (max-width: 992px)
@@ -368,13 +403,13 @@ h2
     align-items: center;
 }
 
-
-
 .BoutonBase             /*Bouton de base pour les menus */
 {
     width: 65%;
     padding: 20px;
 }    
+
+
 
 .BoutonCommander
 {
@@ -423,6 +458,23 @@ h2
 .HeartIcone
 {
     margin-left: 30px;
+}
+
+.ResponsivDesktop
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.EntreePlat
+{
+    width: 50%;
+}
+
+.Dessert
+{
+    margin: auto;
+    width: 60%;
 }
 
 .BoutonBase                     /*Bouton de base pour les menus */
