@@ -232,6 +232,7 @@ animation: LoaderEnd 2s forwards;
 
 .BoutonFonctionnement
 {
+    position: relative;
     border: 0px solid;
     border-radius: 25px;
     box-shadow: 2px 2px 6px 2px #F2F2F2;
@@ -531,11 +532,12 @@ animation: LoaderEnd 2s forwards;
     box-shadow: 2px 2px 6px 2px #F2F2F2;
     padding: 10px;
     margin-bottom: 15px;
-    width: 400px;
+    width: 80%;
     height: auto;
     justify-content: center;
     align-items: center; 
-    margin-right: 90px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .SectionRestaurant

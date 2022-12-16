@@ -33,11 +33,6 @@ h3
     font-size: 20px;
 }
 
-.Size20px
-{
-    font-size: 20px;
-}
-
 .Bold
 {
   font-weight: bold;
@@ -96,7 +91,6 @@ a
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
 }
 
 .Centrer
@@ -105,13 +99,6 @@ a
     align-items: center;
     justify-content: center;
 }
-
-.HeartIcone
-{
-    margin-left: 30px;
-    font-size: 30px;
-}
-
 
 /*////////////////////////////////////////*/
 
@@ -167,19 +154,47 @@ Header
     background-color: #F2F2F2;
 }
 
-.TitrePosition
+.SectionTitre
 {
-    margin-top: 50px;
+    position: relative;
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    margin-top: 50px;   
     width: 95%;
-    height: auto; 
+    height: 50px;    
+}
+
+.fa-heart
+{
+	position: absolute;
+	top: 5px;
+	margin-left: 90%;
+    font-size: 35px;  
+}
+
+.fa-solid-heart
+{
+    color: transparent;
+    background-image: linear-gradient(to bottom right, #FF79DA , #9356DC );
+    background-clip: text; /*Permet de dfinir ou l'on veut appliquer la modification*/
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 350ms ease-out;
+}
+
+.fa-solid-heart:hover 
+{
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 .GreenLine
 {
     border-bottom: 4px solid #99E2D0;
     width: 50px;
+   
 }
 
 .BoutonMenu
@@ -187,11 +202,10 @@ Header
     display: flex;
     flex-direction: row;
  
-    line-height: 2px;
     margin-bottom: 25px;
    
-    width: 80%;
-    height: 60px;
+    width: 85%;
+    height: 80px;
 
     border: 0px solid;
     border-radius: 15px;
@@ -199,8 +213,8 @@ Header
     background-color: #ffffff; 
  
     cursor: pointer; 
-    overflow: hidden;
 
+    overflow: hidden;
     -webkit-animation: apparrition 1.5s; /*Chrome, explorer etc..*/
     -o-animation: apparrition 1.5s ;  /*Mozilla*/
     animation: apparrition 1.5s ;  
@@ -224,12 +238,8 @@ Header
  padding-left: 15px;
  width: 100%;
  height: 100%;
-
- white-space: nowrap;  
- overflow: hidden;
- text-overflow: ellipsis
  
-
+ overflow: hidden; /*Permet au texte de disparaitre sous l'animation de validation*/
 }
 
 .Tarif
@@ -240,12 +250,21 @@ Header
     padding-right: 15px;
 }
 
+.Ellipsis
+{
+    font-size: 17px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;   
+}
+
 .Validation
 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
+    min-width: 100px;
     height: 100%;
     border: 0px solid #99E2D0;
     background-color: #99E2D0;
@@ -389,11 +408,16 @@ h2
     margin-top: -50px;
 }
 
-.TitrePosition
+.SectionTitre
 {
-    display: flex;
+    margin-bottom: 50px;
     justify-content: center;
-    align-items: center;
+}
+
+.fa-heart
+{
+	margin-left: 65%;
+     
 }
 
 .BoutonBase             /*Bouton de base pour les menus */
@@ -441,16 +465,16 @@ h2
 }
 
 
-.TitrePosition
+.SectionTitre
 {
-    display: flex;
+    margin-bottom: 50px;
     justify-content: center;
-    align-items: center;
 }
 
-.HeartIcone
+.fa-heart
 {
-    margin-left: 30px;
+	margin-left: 65%;
+     
 }
 
 .ResponsivDesktop
