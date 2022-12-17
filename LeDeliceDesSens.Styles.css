@@ -223,8 +223,29 @@ Header
     overflow: hidden;
     -webkit-animation: apparrition 1.5s; /*Chrome, explorer etc..*/
     -o-animation: apparrition 1.5s ;  /*Mozilla*/
-    animation: apparrition 1.5s ;  
- 
+    animation: apparrition 1.5s ;
+}
+
+@-webkit-keyframes apparrition /*Permet d'optimiser le fonctionnement de l'animation sur les vieux navigateurs'*/
+{
+ 0% {
+    transform: translateY(500px);
+    opacity: 0;
+} 
+ 100% {
+    transform: translateY(0px); 
+    opacity: 1;
+}
+}
+
+@keyframes apparrition /*Permet de donner une specification au terme "apparrition"*/
+{
+ 0% {transform: translateY(500px); 
+    opacity: 0;
+} 
+ 100% {transform: translateY(0px); 
+    opacity: 1;
+}
 }
 
 .BoutonMenu:hover
@@ -301,24 +322,6 @@ Header
     width: 20px;
     height: 20px;
 }
-
-
-
-
-
-
-@-webkit-keyframes apparrition /*Permet d'optimiser le fonctionnement de l'animation sur les vieux navigateurs'*/
-{
- 0% {transform: translateY(500px);} 
- 100% {transform: translateY(0px);}
-}
-
-@keyframes apparrition1 /*Permet de donner une specification au terme "spin"*/
-{
- 0% {transform: translateY(500px);} 
- 100% {transform: translateY(0px);}
-}
-
 
 .validation
 {
