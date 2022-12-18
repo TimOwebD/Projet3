@@ -48,16 +48,6 @@ h3
     margin-right: 10px;
 }
 
-.MargeDResponsiv
-{
-    margin-right: 30px;
-}
-
-.MargeH
-{
-    margin-top: 30px;
-}
-
 .MargeB
 {
     margin-bottom: 30px;
@@ -205,6 +195,7 @@ animation: LoaderEnd 2s forwards;
 .BoutonExplorer:hover
 {
     box-shadow: 0px 1px 1px 1px rgb(76, 76, 76) ;
+    opacity: 0.8;
 }
 
 .BoutonExplorer:active
@@ -225,7 +216,8 @@ animation: LoaderEnd 2s forwards;
     width: 100%;
     height: auto;
     margin-top: 50px;
-    padding-bottom: 50px;  
+    padding-bottom: 50px;
+
 }
 
 
@@ -238,8 +230,10 @@ animation: LoaderEnd 2s forwards;
     box-shadow: 2px 2px 6px 2px #F2F2F2;
     padding: 10px;
     margin-bottom: 15px;
+    margin-top: 30px;
     width: 80%; 
     height: auto;
+    display: flex;
     justify-content: center;
     align-items: center;  
     cursor: pointer;
@@ -248,7 +242,7 @@ animation: LoaderEnd 2s forwards;
 .BoutonFonctionnement:hover
 {
     box-shadow: 8px 8px 8px rgb(214, 214, 214); 
-    color: rgb(76, 76, 76);   
+    opacity: 0.8;
 }
 
 .BoutonFonctionnement:active
@@ -296,18 +290,19 @@ animation: LoaderEnd 2s forwards;
 .Carte
 {
     background-color: white;
-	width: 450px;
+	width: 400px; /*////////////////////////////////// A MODIFER*/
 	height: 280px;
 	border: 0px solid;
     border-radius: 20px  20px 20px 20px;
 	box-shadow: 6px 6px 6px rgb(235, 235, 235);
-    cursor: pointer;    
+    cursor: pointer;
+    margin-bottom: 30px;    
 }
 
 .Carte:hover
 {
     box-shadow: 8px 8px 8px rgb(214, 214, 214); 
-    color: rgb(76, 76, 76);
+    opacity: 0.8;
 }
 
 .Carte:active
@@ -475,8 +470,13 @@ animation: LoaderEnd 2s forwards;
    	height: 230px;
     border: 0px solid;
     border-radius: 20px  20px 20px 20px;
-	box-shadow: 6px 6px 6px rgb(235, 235, 235);
-}    
+	box-shadow: 6px 6px 6px rgb(235, 235, 235); 
+}  
+
+.MargeDResponsiv
+{
+    margin-right: 30px;
+}
 
 .BlocImage
 {
@@ -564,6 +564,11 @@ animation: LoaderEnd 2s forwards;
     border-radius: 20px  20px 20px 20px;
 	box-shadow: 6px 6px 6px rgb(235, 235, 235);
   }    
+
+  .MargeDResponsiv
+{
+    margin-right: 30px;
+}
 
 .BlocImage
 {

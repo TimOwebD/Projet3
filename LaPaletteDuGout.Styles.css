@@ -212,32 +212,43 @@ Header
  
     margin-bottom: 25px;
    
-    width: 90%;
+    width: 85%;
     height: 80px;
 
+    border: 0px solid;
     border-radius: 15px;
     box-shadow: 2px 2px 6px 2px #dcdbdb;
     background-color: #ffffff; 
  
-    cursor: pointer;
-     
+    cursor: pointer; 
+
     overflow: hidden;
-    -webkit-animation: apparrition 1.5s; /*Chrome, explorer etc..*/
-    -o-animation: apparrition 1.5s ;  /*Mozilla*/
-    animation: apparrition 1.5s ;  
- 
+
+    
 }
 
-@-webkit-keyframes apparrition /*Permet d'optimiser le fonctionnement de l'animation sur les vieux navigateurs'*/
+.animation1
 {
- 0% {
-    transform: translateY(500px);
     opacity: 0;
-} 
- 100% {
-    transform: translateY(0px); 
-    opacity: 1;
+    -webkit-animation: apparrition 1.5s forwards; /*Chrome, explorer etc..*/
+    -o-animation: apparrition 1.5s forwards;  /*Mozilla*/
+    animation: apparrition 1.5s forwards;
 }
+
+.animation2
+{
+    opacity: 0;
+    -webkit-animation: apparrition 1.5s 300ms forwards; /*Chrome, explorer etc..*/
+    -o-animation: apparrition 1.5s 300ms forwards;  /*Mozilla*/
+    animation: apparrition 1.5s 300ms forwards;
+}
+
+.animation3
+{
+    opacity: 0;
+    -webkit-animation: apparrition 1.5s 600ms forwards; /*Chrome, explorer etc..*/
+    -o-animation: apparrition 1.5s 600ms forwards;  /*Mozilla*/
+    animation: apparrition 1.5s 600ms forwards;
 }
 
 @keyframes apparrition /*Permet de donner une specification au terme "apparrition"*/
@@ -246,6 +257,18 @@ Header
     opacity: 0;
 } 
  100% {transform: translateY(0px); 
+    opacity: 1;
+}
+}
+
+@-webkit-keyframes apparrition /*Permet d'optimiser le fonctionnement de l'animation sur les vieux navigateurs'*/
+{
+ 0% {
+    transform: translateY(500px);
+    opacity: 0;   
+} 
+ 100% {
+    transform: translateY(0px); 
     opacity: 1;
 }
 }
@@ -308,6 +331,11 @@ Header
     margin-right: 0px;
 }
 
+.BoutonMenu:hover .circle
+{
+    transform: rotate(0deg);
+}
+
 .Green
 {
     color: #99E2D0;
@@ -323,6 +351,8 @@ Header
     background-color: white;
     width: 20px;
     height: 20px;
+    transition: transform 500ms ease-in-out ;
+    transform: rotate(-360deg);
 }
 
 .validation
@@ -351,6 +381,7 @@ Header
 .BoutonCommander:hover
 {
     box-shadow: 0px 1px 1px 1px rgb(76, 76, 76) ;
+    opacity: 0.8;
 }
 
 .BoutonCommander:active
@@ -493,7 +524,12 @@ h2
     flex-direction: row;
 }
 
-.EntreePlat
+.Entree
+{
+    width: 50%;
+}
+
+.Plat
 {
     width: 50%;
 }
