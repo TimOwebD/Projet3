@@ -33,6 +33,7 @@ h3
     font-size: 20px;
 }
 
+
 .Bold
 {
   font-weight: bold;
@@ -101,6 +102,13 @@ a
     justify-content: center;
 }
 
+.HeartIcone
+{
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+
 /*////////////////////////////////////////*/
 
 
@@ -138,11 +146,11 @@ Header
 
 .Image
 {
-    background-image: url("images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-    background-size: cover;
-	background-position: center;
     width: 100%;
-    height: 100%;
+    height: auto;
+    max-height: 350px;
+    -o-object-fit: cover;   /*Permet de garder la bonne résolution d'image*/
+    object-fit: cover;
 }
 
 .SectionMenu
@@ -194,7 +202,7 @@ Header
 .GreenLine
 {
     border-bottom: 4px solid #99E2D0;
-    width: 50px; 
+    width: 50px;
 }
 
 .BoutonMenu
@@ -271,13 +279,6 @@ Header
     color: rgb(76, 76, 76);
 }
 
-
-.BoutonMenu:hover
-{
-    box-shadow: 8px 8px 8px rgb(214, 214, 214); 
-    color: rgb(76, 76, 76);
-}
-
 .BoutonMenu:active
 {
     box-shadow: 4px 4px 4px rgb(214, 214, 214);
@@ -289,7 +290,6 @@ Header
  padding-left: 15px;
  width: 100%;
  height: 100%;
-
  overflow: hidden; /*Permet au texte de disparaitre sous l'animation de validation*/
 }
 
@@ -390,12 +390,6 @@ Header
 }
 
 
-
-
-
-
-
-
 /*////////////////////////////////////////*/
 
 
@@ -463,7 +457,7 @@ h2
 
 .fa-heart
 {
-	margin-left: 65%;
+	margin-left: 60%;
      
 }
 
@@ -510,6 +504,7 @@ h2
 {
     margin-top: -50px;
 }
+
 
 .SectionTitre
 {
